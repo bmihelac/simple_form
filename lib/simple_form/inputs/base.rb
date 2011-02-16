@@ -28,7 +28,7 @@ module SimpleForm
         @reflection         = options.delete(:reflection)
         @options            = options
         @input_html_options = html_options_for(:input, input_html_classes).tap do |o|
-          o[:required]  = true if has_required?
+          #o[:required]  = true if has_required?
           o[:disabled]  = true if disabled?
           o[:autofocus] = true if has_autofocus?
         end
